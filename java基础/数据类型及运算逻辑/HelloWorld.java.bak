@@ -1,0 +1,32 @@
+//单行注释
+/*
+	多行注释	不能嵌套
+*/
+
+/**
+
+@author mzy
+@version 1.0
+这是我的第一个java程序，庆祝！
+文档注释内容可以被]DK提供的工具javadoc所解析，生成一套以网页文件形式体现的该程序的说明文档
+
+*/
+
+public class HelloWorld{
+	public static void main(String[] args){
+		System.out.println("hello,world !! 你好，中国！");
+		System.out.print("hello,world !! 你好，中国！");
+		System.out.println("12341847194");
+		System.out.println(10+26);
+	}
+}
+
+class HelloChengdun{
+	
+}
+class HelloShanghai{
+	
+}
+
+
+

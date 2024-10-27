@@ -1,0 +1,16 @@
+class HelloChina{
+	public static void main(String[] args){
+		System.out.println("hello,world !! 你好，中国！");
+	}
+}
+class:关键字，表示类，后面跟着类名。
+main()方法的格式是固定的 表示程序的入口
+public static void main(String[] args)	(String[] args)可变化为 (String args[])
+Java程序是严格区分大小写。
+System.out.println("输出的字符串信息");		输出之后会换行
+System.out.print("输出的字符串信息");	输出之后不会换行
+每一行以;结束，跟c有点类似
+
+命名格式严格区分大小写，但是Windows系统不区分大小写  导致用javac命令编译时不会报错
+
+每有一个类编译后都会生成一个class文件，文件名与java类名相同
