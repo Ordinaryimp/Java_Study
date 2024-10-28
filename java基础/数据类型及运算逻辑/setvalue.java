@@ -1,17 +1,16 @@
 /*
-2.ËµÃ÷£º
-µ±¡°-¡±Á½²àÊı¾İÀàĞÍ²»Ò»ÖÂÊ±£¬¿ÉÒÔÊ¹ÓÃ×Ô¶¯ÀàĞÍ×ª»»»òÊ¹ÓÃÇ¿ÖÆÀàĞÍ×ª»»Ô­Ôò½øĞĞ´¦Àí¡£
-Ö§³ÖÁ¬Ğø¸³Öµ¡£
-£º/=¡¢%=²Ù×÷£¬²»»á¸Ä±ä±äÁ¿±¾ÉíµÄÊı¾İÀàĞÍ
+2.è¯´æ˜ï¼š
+å½“â€œ-â€ä¸¤ä¾§æ•°æ®ç±»å‹ä¸ä¸€è‡´æ—¶ï¼Œå¯ä»¥ä½¿ç”¨è‡ªåŠ¨ç±»å‹è½¬æ¢æˆ–ä½¿ç”¨å¼ºåˆ¶ç±»å‹è½¬æ¢åŸåˆ™è¿›è¡Œå¤„ç†ã€‚
+æ”¯æŒè¿ç»­èµ‹å€¼ã€‚
+ï¼š/=ã€%=æ“ä½œï¼Œä¸ä¼šæ”¹å˜å˜é‡æœ¬èº«çš„æ•°æ®ç±»å‹
 */
 
 class setvalue
 {
 	public static void main(String[] args) 
 	{
-
 		int num1 = 1;
-		//Á¬Ğø¸³Öµ
+		//è¿ç»­èµ‹å€¼
 		int a,b;
 		a=b=3;
 		byte c=9;
@@ -23,5 +22,55 @@ class setvalue
 		a=10;
 		a=a+(a++)+(++a);	//10+10+12
 		System.out.println(a);
+
+		int num=7;
+		int num2=-7;
+		System.out.println(num<<1);
+		System.out.println(num<<2);
+		System.out.println(num<<3);
+		System.out.println(num<<28);
+		System.out.println(num<<29);
+
+		System.out.println(num>>1);
+		System.out.println(num>>2);
+		System.out.println(num>>3);
+		System.out.println(num>>28);
+		System.out.println(num>>29);
+
+
+		System.out.println(num2<<1);
+		System.out.println(num2<<2);
+		System.out.println(num2<<3);
+
+		System.out.println(num2>>4);
+		System.out.println(num2>>10);
+		System.out.println(num2>>3);
+		System.out.println(num2>>1);
+		System.out.println(num2>>2);
+
+		System.out.println(~0);
+		System.out.println(~6);
+		System.out.println(~(-10));
+		
+		//äº¤æ¢ä¸¤ä¸ªæ•°			æˆ–è®¾ç«‹ä¸­é—´å˜é‡è¿›è¡Œäº¤æ¢(æ¨è)
+		int m=18;
+		int n=23;
+		m=m^n;			//ç¼ºç‚¹ï¼šå®ç”¨æ€§å·®ï¼Œä¸èƒ½ç”¨äºéæ•°å€¼ç±»å‹
+		n=n^m;
+		m=m^n;
+		System.out.println(m);
+		System.out.println(n);
+
+		m=m+n;		//å¼Šç«¯ï¼šä¸¤æ•°å’Œè¶…å‡ºä¸Šé™ä¼šæº¢å‡ºæŠ¥é”™   
+		n=m-n;
+		m=m-n;
+		
+		//1. æ‰€æœ‰æ­£æ•´æ•°çš„æŒ‰ä½å–åæ˜¯å…¶æœ¬èº«+1çš„è´Ÿæ•°
+
+		//2. æ‰€æœ‰è´Ÿæ•´æ•°çš„æŒ‰ä½å–åæ˜¯å…¶æœ¬èº«+1çš„ç»å¯¹å€¼
+
+		//3. é›¶çš„æŒ‰ä½å–åæ˜¯ -1ï¼ˆ0åœ¨æ•°å­¦ç•Œæ—¢ä¸æ˜¯æ­£æ•°ä¹Ÿä¸æ˜¯è´Ÿæ•°
+
+
 	}
 }
