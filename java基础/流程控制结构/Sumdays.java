@@ -1,11 +1,13 @@
-//°¸Àı:±àĞ´³ÌĞò:´Ó¼üÅÌÉÏÊäÈë2023ÄêµÄ¡°Month¡±ºÍ¡°Day¡±£¬ÒªÇóÍ¨¹ı³ÌĞòÊä³öÊäÈëµÄÈÕÆÚÎª2023ÄêµÄµÚ¼¸Ìì.
+//æ¡ˆä¾‹:ç¼–å†™ç¨‹åº:ä»é”®ç›˜ä¸Šè¾“å…¥2023å¹´çš„â€œMonthâ€å’Œâ€œDayâ€ï¼Œè¦æ±‚é€šè¿‡ç¨‹åºè¾“å‡ºè¾“å…¥çš„æ—¥æœŸä¸º2023å¹´çš„ç¬¬å‡ å¤©.
 /*
 
-switch-case Óëif-elseÖ®¼äµÄ×ª»»
-¿ª·¢ÖĞ·²ÊÇ¿ÉÒÔÊ¹ÓÃswitch-case½á¹¹µÄ³¡¾°£¬¶¼¿ÉÒÔ¸ÄĞ´Îªif-else¡£·´Ö®£¬²»³ÉÁ¢
-¿ª·¢ÖĞ£¬Èç¹ûÒ»¸ö¾ßÌåÎÊÌâ¼È¿ÉÒÔÊ¹ÓÃswitch-case£¬
-ÓÖ¿ÉÒÔÊ¹ÓÃif-elseµÄÊ±ºò£¬ÍÆ¼öÊ¹ÓÃswitch-case:
-ÎªÊ²Ã´?switch-caseÏà½ÏÓÚif-elseĞ§ÂÊÉÔ¸ß¡£
+switch-case ä¸if-elseä¹‹é—´çš„è½¬æ¢
+å¼€å‘ä¸­å‡¡æ˜¯å¯ä»¥ä½¿ç”¨switch-caseç»“æ„çš„åœºæ™¯ï¼Œéƒ½å¯ä»¥æ”¹å†™ä¸ºif-elseã€‚åä¹‹ï¼Œä¸æˆç«‹
+å¼€å‘ä¸­ï¼Œå¦‚æœä¸€ä¸ªå…·ä½“é—®é¢˜æ—¢å¯ä»¥ä½¿ç”¨switch-caseï¼Œ
+åˆå¯ä»¥ä½¿ç”¨if-elseçš„æ—¶å€™ï¼Œæ¨èä½¿ç”¨switch-case:
+ä¸ºä»€ä¹ˆ?switch-caseç›¸è¾ƒäºif-elseæ•ˆç‡ç¨é«˜ã€‚
+
+å¦‚æœå¹´ä¹Ÿé‡‡ç”¨è¾“å…¥ï¼Œå¯åœ¨2æœˆçš„åˆ†æ”¯åŠ å…¥å¯¹é—°å¹´çš„åˆ¤æ–­->(year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)ï¼Œå†³å®š2æœˆæ˜¯28\29å¤©ã€‚
 
 */
 import java.util.Scanner;
@@ -16,15 +18,15 @@ class  Sumdays
 	{
 
 		Scanner input = new Scanner(System.in);
-		System.out.println("ÇëÊäÈëÔÂ·İ");
+		System.out.println("è¯·è¾“å…¥æœˆä»½");
 		int month = input.nextInt(); 
 
-		System.out.println("ÇëÊäÈëÌìÊı");
+		System.out.println("è¯·è¾“å…¥å¤©æ•°");
 		int days = input.nextInt(); 
 
 		input.close();
-		//¼ÙÉèÓÃ»§ÊäÈëÊı¾İºÏ·¨£¬ºóĞøÓÃÕıÔò±í´ïÊ½¼ìÑé
-		//·½Ê½Ò»£º
+		//å‡è®¾ç”¨æˆ·è¾“å…¥æ•°æ®åˆæ³•ï¼Œåç»­ç”¨æ­£åˆ™è¡¨è¾¾å¼æ£€éªŒ
+		//æ–¹å¼ä¸€ï¼š
 		int sumdays=0;
 		switch(month){
 			case 1:
@@ -64,7 +66,7 @@ class  Sumdays
 				sumdays=31+28+31+30+31+30+31+31+30+31+30+days;
 				break;
 		}
-		//·½Ê½¶ş£º
+		//æ–¹å¼äºŒï¼š
 		switch(month){
 			case 12:
 				sumdays+=30;
@@ -88,7 +90,7 @@ class  Sumdays
 				sumdays+=28;
 			case 2:
 				sumdays+=31;
-			case 1£º
+			case 1ï¼š
 				sumdays+=days;
 		}
 		System.out.println(sumdays);
