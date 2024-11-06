@@ -1,37 +1,45 @@
-package com.three;
+package com.five;
 
 /**
  * ClassName:Employee
- * Package:com.three
+ * Package:com.five
  * Description:
  *
- *声明员工类员工，包含属性:编号id、姓名姓名、年龄年龄、薪资薪水。
- * 声明Employee测试测试类，并在Main方法中，创建2个员工对象，并为属性赋值，并打印两个员工的信息。
- *
  * @Author mzy
- * @Create 2024/11/4 14:48
+ * @Create 2024/11/6 14:08
  * @Version 1.0
  */
 public class Employee {
-    //属性
-    String id;  //编号
-    String name;  //姓名
-    int age;    //年龄
-    double salary;  //薪水
-
-    Mydate birthday;//生日
-
-    static  String info = "员工"; //static修饰  所有对象公用一份
-
-    //定义一个方法调用实例属性
-    public void show(){
-        System.out.println("编号为:"+id+" "+"姓名为:"+name+" "+"年龄为:"+age+" "+"薪资为:"+salary+" "+
-                "生日为:"+birthday.year+"年"+" "+birthday.month+"月"+" "+birthday.days+"日");
+    private String name;
+    private int age;
+    private char gender;
+    private String tel;
+    public String getName(){
+        return name;
     }
-
-    public String show1(){
-        return "编号为:"+id+" "+"姓名为:"+name+" "+"年龄为:"+age+" "+"薪资为:"+salary+" "+
-                "生日为:"+birthday.year+"年"+" "+birthday.month+"月"+" "+birthday.days+"日";
+    public void setName(String n){
+        name=n;
     }
-
+    public int getAge(){
+        return age;
+    }
+    public void setAge(int a){
+        age=a;
+    }
+    public char getGender(){
+        return gender;
+    }
+    public void setGender(char g){
+        gender=g;
+    }
+    public String getTel(){
+        return tel;
+    }
+    public void setTel(String t){
+        tel=t;
+    }
+    public String showInfo(){
+        return name+"\t"+age+"\t"+gender+"\t"+tel;
+//        return getName()+"\n"+getAge()+"\n"+getGender()+"\n"+getTel();   调方法多一次栈帧的入栈操作
+    }
 }
