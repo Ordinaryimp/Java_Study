@@ -1,33 +1,35 @@
-package com.five;
+package com.six;
 
 /**
  * ClassName:Customer
- * Package:com.five
+ * Package:com.six
  * Description:
  *
  * @Author mzy
- * @Create 2024/11/6 19:53
+ * @Create 2024/11/7 15:40
  * @Version 1.0
  */
 public class Customer {
     private String firstname;
     private String lastname;
+
     private Account account;
 
-    public Customer(String f,String l){
-        firstname = f;
-        lastname = l;
+    public Customer(String firstname, String lastname) {
+        this.firstname = firstname;
+        this.lastname = lastname;
     }
-    public String getFirstname(){
+
+    public String getFirstname() {
         return firstname;
     }
-    public String getLastname(){
+    public String getLastname() {
         return lastname;
     }
-    public Account getAccount(){
-        return account;
+    public void setAccount(Account account) {
+        this.account = account;
     }
-    public void setAccount(Account a){
-        account = a;
+    public Account getAccount() {
+        return account;
     }
 }
